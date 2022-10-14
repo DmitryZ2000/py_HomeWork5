@@ -25,9 +25,7 @@ def decode_function(my_str):
             mult = int(number)
             decode_str += mult * my_str[item]
             number = ''
-    return decode_str
-
-    return decode_str
+    return decode_str    
 
 system('cls')
 

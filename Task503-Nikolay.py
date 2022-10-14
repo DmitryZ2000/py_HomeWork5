@@ -102,4 +102,4 @@ if number_players == 2:
     if count_move == 9:
         print('Ничья!')
     else:
-        print(f'На {count_move} ходу победили "{win}"')
+        print(f'На {count_move} ходу победили "{win}"' )

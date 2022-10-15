@@ -26,6 +26,7 @@ def check_empty(x, y, list_cell):
 
 def check_win(list_cell):
     win = True
+    # С помощью \ мы делаем перенос строки
     if list_cell[0][0] == list_cell[0][1] == list_cell[0][2] != ' ' or \
     list_cell[1][0] == list_cell[1][1] == list_cell[1][2] != ' ' or \
     list_cell[2][0] == list_cell[2][1] == list_cell[2][2] != ' ' or \

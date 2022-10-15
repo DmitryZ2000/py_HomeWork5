@@ -26,24 +26,16 @@ def check_empty(x, y, list_cell):
 
 def check_win(list_cell):
     win = True
-    if list_cell[0][0] == list_cell[0][1] == list_cell[0][2] != ' ':
+    if list_cell[0][0] == list_cell[0][1] == list_cell[0][2] != ' ' or \
+    list_cell[1][0] == list_cell[1][1] == list_cell[1][2] != ' ' or \
+    list_cell[2][0] == list_cell[2][1] == list_cell[2][2] != ' ' or \
+    list_cell[0][0] == list_cell[1][0] == list_cell[2][0] != ' ' or \
+    list_cell[0][1] == list_cell[1][1] == list_cell[2][1] != ' ' or \
+    list_cell[0][2] == list_cell[1][2] == list_cell[2][2] != ' ' or \
+    list_cell[0][0] == list_cell[1][1] == list_cell[2][2] != ' ' or \
+    list_cell[2][2] == list_cell[1][1] == list_cell[0][0] != ' ':
         return win
-    elif list_cell[1][0] == list_cell[1][1] == list_cell[1][2] != ' ':
-        return win
-    elif list_cell[2][0] == list_cell[2][1] == list_cell[2][2] != ' ':
-        return win
-    elif list_cell[0][0] == list_cell[1][0] == list_cell[2][0] != ' ':
-        return win
-    elif list_cell[0][1] == list_cell[1][1] == list_cell[2][1] != ' ':
-        return win
-    elif list_cell[0][2] == list_cell[1][2] == list_cell[2][2] != ' ':
-        return win
-    elif list_cell[0][0] == list_cell[1][1] == list_cell[2][2] != ' ':
-        return win
-    elif list_cell[2][2] == list_cell[1][1] == list_cell[0][0] != ' ':
-        return win
-    else:
-        return False
+    else: return False
 
 
 system('cls')

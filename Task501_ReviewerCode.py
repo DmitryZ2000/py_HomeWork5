@@ -16,4 +16,4 @@ print('4 - Решение Ревьюера', ' '.join([word for word in my_text.
 
 print('5', ' '.join(list(filter(lambda word: not PATTERN in word, li)))) # Решение в 1 строку от меня (можно не переводить в строку см ниже)
 
-print('6', ' '.join(list(filter(lambda word: not PATTERN in word, li)))) # Решение в 1 строку от меня (можно не переводить в строку)
+print('6', ' '.join(filter(lambda word: not PATTERN in word, li))) # Решение в 1 строку от меня (можно не переводить в строку оставлять тип filter)
